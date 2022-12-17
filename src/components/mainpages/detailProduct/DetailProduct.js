@@ -1,6 +1,7 @@
 import React, {useContext, useState, useEffect} from "react";
 import { useParams, Link } from "react-router-dom";
 import { GlobalState } from "../../../GlobalState";
+import ProductItem from "../utils/productItem/ProductItem";
 
 
 function DetailProduct () {
@@ -10,13 +11,13 @@ function DetailProduct () {
     const [detailProduct, setDetailProduct] = useState([])
 
     useEffect(() => {
-        if(params){
+        if(params.id){
             products.forEach(product => {
                 if(product._id === params.id) setDetailProduct(product)
             })
         }
 
-    }, [params, products])
+    }, [params.id, products])
 
     
     if(detailProduct.length === 0) return null;
@@ -39,7 +40,16 @@ function DetailProduct () {
         </div>
 
         <div>
-            <h2></h2>
+            <h2>You Might Also Like</h2>
+
+        </div>
+        <div className="products">
+            {
+                products.map(product => {
+                    return product.category === detailProduct.category
+                    ? <ProductItem key={product._id} product={product} />:null
+                })
+            }
 
         </div>
         </>

@@ -1,11 +1,12 @@
 import React from "react";
 import {Routes, Route} from 'react-router-dom';
 import Products from "./products/Products";
-import DetailProduct from "./detailProduct/DetailProduct"
+import DetailProduct from './detailProduct/DetailProduct'
 import Login from "./auth/Login";
 import Register from "./auth/Register";
 import Cart from "./cart/Cart";
 import NotFound from "./utils/not-found/NotFound";
+
 
 function Pages() {
     return (
