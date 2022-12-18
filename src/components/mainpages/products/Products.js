@@ -7,6 +7,7 @@ import Loading from "../utils/loading/Loading";
 function Products() {
     const state = useContext(GlobalState)
     const [products] = state.productsAPI.products
+    const [isAdmin] = state.userAPI.isAdmin
 
     
     return (
@@ -14,7 +15,8 @@ function Products() {
         <div className="products">
             {
                 products.map(product => {
-                    return <ProductItem key={product._id} product={product}/>
+                    return <ProductItem key={product._id} product={product}
+                    isAdmin={isAdmin}/>
                     
                     
                 })

@@ -4,13 +4,26 @@ import Menu from './icon/menu.svg';
 import Close from './icon/close.svg';
 import Cart from './icon/cart.svg';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 function Header() {
     const state = useContext(GlobalState)
-
     const [isLogged, setIsLogged] = state.userAPI.isLogged
     const [isAdmin, setIsAdmin] = state.userAPI.isAdmin
+    const [cart] = state.userAPI.cart
+    // const [menu, setMenu] = useState(false)
+
     
+
+    const logoutUser = async () =>{
+        await axios.get('/user/logout')
+        
+        localStorage.clear()
+        setIsAdmin(false)
+        setIsLogged(false)
+        
+        // window.location.href = "/";
+    }
 
 
 
@@ -27,10 +40,15 @@ function Header() {
         return(
             <>
                 <li><Link to="/history">History</Link></li>
-                <li><Link to="/">Logout</Link></li>
+                <li><Link to="/" onClick={logoutUser}>Logout</Link></li>
          </>
          )
     }
+
+    // const styleMenu = {
+    //     left: menu ? 0 : "-100%"
+    // }
+
 
     return (
         <header>
@@ -49,15 +67,10 @@ function Header() {
                     <Link to="/">{isAdmin ? 'Products' : 'Plants'}</Link>
 
                     {isAdmin && adminRouter()}
-                    {
-                    isLogged ? loggedRouter() : <li><Link to="/login">Login  Register</Link></li>
-                }
+                    
+                   {   isLogged ? loggedRouter() : <li><Link to="/login">Login ✥ Register</Link></li> }
                 
-
-
-                    <Link to="/login"> Login </Link>
-                    <Link to="/register"> Register </Link>
-                    <li>
+                 <li>
                         <img src={Close} alt="" width="30" className="menu" />
                     </li>
 
@@ -67,7 +80,7 @@ function Header() {
                 {
             isAdmin ? '' 
             :<div className="cart-icon">
-                <span>0</span>
+                <span>{cart.length}</span>
                 <Link to="/cart">
                     <img src={Cart} alt="" width="30" />
                 </Link>
