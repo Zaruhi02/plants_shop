@@ -29,7 +29,7 @@
          <li>Check out the items from the application or continue shopping</li>
 </ul>
 
-#### Admin interface
+### Admin interface
 <ul>
      <li>Plants</li>
      <li>Create Products</li>
@@ -47,13 +47,13 @@
           <li>View the history of the customers who purchased the items</li>
            </ul>
 
-##### Install dependencies for front end 
+### Install dependencies for front end 
 <h5> git clone https://github.com/Zaruhi02/plants_shop.git<h5>
 <h5>cd plants_shop --> npm install</h5>
 <h5>npm start</h5>
 
 
-###### Built with 
+### Built with 
 <ul>
 <li>Node.js</li>
    <ul>
@@ -62,12 +62,12 @@
 <li>MongoDB</li>
 </ul>
 
-###### Installation backend
+### Installation backend
 <h6>git clone https://github.com/Zaruhi02/ecommerce-backend.git</h6>
 <h6>cd ecommerce-backend --> npm install</h6>
 <h6>npm run dev</h6>
 
-###### Getting started
+### Getting started
 <h7>To test the application</h7>
 <ul>
 <li>Register on https://www.mongodb.com/atlas/database</li>
