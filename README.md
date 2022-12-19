@@ -20,6 +20,33 @@
     </ul>
 </ul>
     
+<h3>The user can perform the following functions:</h3>
+<ul>
+         <li>Sign-on/login using a username and password</li>
+         <li> View, browse, and select a category on the home page</li>
+         <li>View, add, and update items in the cart</li>
+         <li>Delete items from the cart</li>
+         <li>Check out the items from the application or continue shopping</li>
+</ul>
+
+#### Admin interface
+<ul>
+     <li>Plants</li>
+     <li>Create Products</li>
+     <li>Categories</li>
+     <li>History</li>
+     <li>Filters</li>
+     <li>Select All</li>
+     <li>Delete All</li>
+</ul>
+
+<h4>The administrator can perform the following functions:</h4>
+          <ul>
+          <li>add and delete products</li>
+          <li>change price and update description</li>
+          <li>View the history of the customers who purchased the items</li>
+           </ul>
+
 
 
 # Getting Started with Create React App
