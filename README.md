@@ -2,7 +2,7 @@
   <h1> PLANTS.COM </h1>
 
 ## Description
-<h2>Ecommerce website built with React Context API for state management pure CSS for style. This page sells plants. The page is created for people who love plants and their care. Here you can search for plants by species. You will find all the plants you need.</h2>
+<h2>Ecommerce website built with React for state management pure CSS for style. This page sells plants. The page is created for people who love plants and their care. Here you can search for plants by species. You will find all the plants you need.</h2>
 
 ### User interface
 <ul>
@@ -47,7 +47,7 @@
           <li>View the history of the customers who purchased the items</li>
            </ul>
 
-### Install dependencies for front end 
+### Install  
 <h5> git clone https://github.com/Zaruhi02/plants_shop.git<h5>
 <h5>cd plants_shop --> npm install</h5>
 <h5>npm start</h5>
@@ -69,7 +69,7 @@
 <li>Authorization</li>
 </ul>
 
-### Installation backend
+### Installing
 <h6>git clone https://github.com/Zaruhi02/ecommerce-backend.git</h6>
 <h6>cd ecommerce-backend --> npm install</h6>
 <h6>npm run dev</h6>
