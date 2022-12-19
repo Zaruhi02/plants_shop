@@ -1,4 +1,25 @@
+# Project name
+  <h1> PLANTS.COM </h1>
+
+## Description
+<h2>Ecommerce website built with React Context API for state management pure CSS for style. This page sells plants. The page is created for people who love plants and their care. Here you can search for plants by species. You will find all the plants you need.</h2>
+
+### User interface
+-Plants
+-Login 
+-Register
+-Cart
+-Filter
+    -All
+    -Cacti & Succulents
+    -Flowering Plants
+    -Terrariums
+    -Rubber Plant
+
+
+
 # Getting Started with Create React App
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
