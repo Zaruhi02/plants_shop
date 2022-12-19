@@ -5,17 +5,21 @@
 <h2>Ecommerce website built with React Context API for state management pure CSS for style. This page sells plants. The page is created for people who love plants and their care. Here you can search for plants by species. You will find all the plants you need.</h2>
 
 ### User interface
--Plants
--Login 
--Register
--Cart
--Filter
-    -All
-    -Cacti & Succulents
-    -Flowering Plants
-    -Terrariums
-    -Rubber Plant
-
+<ul>
+<li>Plants</li>
+<li>Login </li>
+<li>Register</li>
+<li>Cart</li>
+<li>Filter</li>
+   <ul>
+   	<li>All</li>
+    <li> Cacti & Succulents</li>
+	<li>Flowering Plants</li>
+	<li>Terrariums</li>
+  	<li>Rubber Plant</li>
+    </ul>
+</ul>
+    
 
 
 # Getting Started with Create React App
