@@ -1,6 +1,7 @@
 import React, {createContext, useState, useEffect} from 'react';
 import ProductsAPI from './api/ProductsAPI';
 import UserAPI from './api/UserAPI';
+import CategoriesAPI from './api/CategoriesAPI';
 import axios from 'axios'
 
 
@@ -19,8 +20,13 @@ export const DataProvider = ({children}) => {
 
     
     useEffect(() =>{
-        const firstLogin = localStorage.getItem('firstLogin')
-        if(firstLogin) refreshToken()
+        const refreshToken = async () =>{
+            const res = await axios.get('/user/refresh_token')
+    
+            setToken(res.data.accesstoken)
+        }
+    
+        refreshToken()
            },[])
 
 
@@ -29,7 +35,8 @@ export const DataProvider = ({children}) => {
     const state = {
         token: [token, setToken],
         productsAPI: ProductsAPI(),
-        userAPI: UserAPI(token)
+        userAPI: UserAPI(token),
+        categoriesAPI: CategoriesAPI()
         
     }
     return(
