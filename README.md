@@ -2,9 +2,9 @@
   <h1> PLANTS.COM </h1>
 
 ## Description
-<h2>Ecommerce website built with React for state management pure CSS for style. This page sells plants. The page is created for people who love plants and their care. Here you can search for plants by species. You will find all the plants you need.</h2>
+<h2>Ecommerce website built with React for state management and pure CSS for styling. This page is for selling plants. It is created for people who love plants and their care. Here you can search for plants by species. You will find all the plants you need.</h2>
 
-### User interface
+### User Interface 
 <ul>
 <li>Plants</li>
 <li>Login </li>
@@ -48,9 +48,12 @@
            </ul>
 
 ### Install  
-<h5> git clone https://github.com/Zaruhi02/plants_shop.git<h5>
-<h5>cd plants_shop --> npm install</h5>
-<h5>npm start</h5>
+```
+ git clone https://github.com/Zaruhi02/plants_shop.git
+ cd plants_shop --> npm install
+ npm start
+ 
+ ```
 
 
 
