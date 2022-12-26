@@ -27,6 +27,7 @@ function Pages() {
         <Route exact path='/history/:id' element={<OrderDetails />} />
         <Route exact path='/category' element={<Categories />} />
         <Route exact path='/create_product' element={<CreateProduct />} />
+        <Route exact path='/edit_product/:id' element={<CreateProduct />} />
         <Route exact path='/cart' element={<Cart/>} />
         <Route exact path='*' element={<NotFound/>} />
         </Routes>
