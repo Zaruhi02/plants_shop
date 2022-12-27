@@ -11,7 +11,7 @@ function Header() {
     const [isLogged] = state.userAPI.isLogged
     const [isAdmin] = state.userAPI.isAdmin
     const [cart] = state.userAPI.cart
-    // const [menu, setMenu] = useState(false)
+    const [menu, setMenu] = useState(false)
 
 
 
@@ -41,9 +41,9 @@ function Header() {
         )
     }
 
-    // const styleMenu = {
-    //     left: menu ? 0 : "-100%"
-    // }
+    const styleMenu = {
+        left: menu ? 0 : "-100%"
+    }
 
 
     return (

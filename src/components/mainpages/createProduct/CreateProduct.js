@@ -10,7 +10,7 @@ const initialState ={
     title: '',
     price: 0,
     description:'',
-    content:'',
+    // content:'',
     category: '',
     _id: ''
 }
